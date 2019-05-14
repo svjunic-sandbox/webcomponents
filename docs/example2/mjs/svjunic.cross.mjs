@@ -39,7 +39,7 @@ customElements.define(
 
       // 非同期もちゃんとうごく
       //fetch('./mogeta.json')
-      fetch('https://svjunic.github.io/sandbox_webcomponents/example2/mogeta.json').then(function(response) {
+      fetch('https://svjunic.github.io/sandbox_webcomponents/example2/mogeta.json')
         .then(response => {
           return response.json();
         })
