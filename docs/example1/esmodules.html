@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML Imports</title>
+    <script type="text/javascript"></script>
+    <link rel="stylesheet" href="./css/common.css" type="text/css" media="screen" charset="utf-8">
+    <script src="./js/non1.js"></script>
+    <script src="./js/load.js"></script>
+    <!-- <script type="module" src="./mjs/svjunic.mjs"></script> -->
+    <!-- <script type="module" src="./mjs/svjunic.heavy.mjs"></script> -->
+    <!-- <script type="module">
+      import mogeta from './mjs/svjunic.import.mjs';
+      mogeta();
+    </script> -->
+    <!-- <script type="module">
+      // dynamic import
+      setTimeout( ()=>{
+        import('./mjs/svjunic.import.mjs').then( module=>{
+          module.default();
+        });
+      }, 3000);
+    </script> -->
+    <script src="./js/defer.js" defer></script>
+    <script src="./js/non2.js"></script>
+
+    <!-- {{{ -->
+    <script type="text/javascript">
+      //window.addEventListener('slotchange',function(e){
+      //  console.log('(global)fire "slotchange" event', e.target);
+      //});
+    </script>
+    <!-- }}} -->
+  </head>
+  <body>
+    <sv-junic>
+      <div slot="tab1">
+        <img src="./img/hysteric_okoru_man.png" alt="tab1">
+      </div>
+      <div slot="tab2">
+        <img src="./img/syokuji_computer.png" alt="tab2">
+      </div>
+      <div slot="tab3">
+        <img src="./img/kyodai_meiro.png" alt="tab3">
+      </div>
+    </sv-junic>
+
+    <!-- {{{ --
+    <hr />
+
+    <p>お腹空いた</p>
+    <sv-junic id="interval-test">
+      <div slot="tab1">
+        <img src="./img/food_onigirazu.png" alt="tab1">
+      </div>
+      <div slot="tab2">
+        <img src="./img/onigiri_tawara.png" alt="tab1">
+      </div>
+      <div slot="tab3">
+        <img src="./img/onigiri_tenmusu.png" alt="tab1">
+      </div>
+    </sv-junic>
+    <!-- }}} -->
+
+  </body>
+</html>

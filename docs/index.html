@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Web Components</title>
+    <script>
+      window.addEventListener("load", function() {
+        Array.prototype.forEach.call(
+          document.querySelectorAll(".link>li>a"),
+          function(a) {
+            a.innerHTML = a.href;
+          }
+        );
+      });
+    </script>
+  </head>
+  <body>
+    <ol class="link">
+      <li><a href="./README.html"></a></li>
+    </ol>
+    <ol class="link">
+      <li><a href="./example1/htmlimport.html"></a>※もう動かないので参考用</li>
+      <li><a href="./example1/esmodules.html"></a></li>
+    </ol>
+    <ol class="link">
+      <li><a href="./example2/nested.html"></a></li>
+    </ol>
+  </body>
+</html>

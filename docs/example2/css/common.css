@@ -1,0 +1,10 @@
+body{
+  background: #000;
+}
+/* custom element内は効かない証明用 */
+li{
+  border: 10px solid #00f;
+}
+img{
+  width: 100%;
+}
