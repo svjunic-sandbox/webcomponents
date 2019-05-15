@@ -1,5 +1,5 @@
 # WebComponentsの遊び場
-https://svjunic.github.io/sandbox_webcomponent
+https://svjunic.github.io/sandbox_webcomponents
 
 ## なぜ今WebComponentsなのか
 私の体感
